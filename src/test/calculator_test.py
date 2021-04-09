@@ -2,7 +2,7 @@
 from numbers import Number
 from unittest import TestCase
 
-from src.main.calculator import Calculator
+from src.main.file_reader import FileReader
 
 
 class CalculatorTest(TestCase):
@@ -33,7 +33,7 @@ class CalculatorTest(TestCase):
             self.assertAlmostEqual(expected_calculation, actual_calculation, calculation_error_message)
 
     def test_add(self):
-        self._test(Calculator().add, [
+        self._test(FileReader().add, [
             (1, 3, 4),
             (5, 8, 13),
             (13, 21, 34),
@@ -44,7 +44,7 @@ class CalculatorTest(TestCase):
         ])
 
     def test_subtract(self):
-        self._test(Calculator().subtract, [
+        self._test(FileReader().subtract, [
             (1, 3, -2),
             (5, 8, -3),
             (13, 21, -8),
@@ -55,7 +55,7 @@ class CalculatorTest(TestCase):
         ])
 
     def test_multiply(self):
-        self._test(Calculator().multiply, [
+        self._test(FileReader().multiply, [
             (1, 3, 3),
             (5, 8, 40),
             (13, 21, 273),
@@ -66,7 +66,7 @@ class CalculatorTest(TestCase):
         ])
 
     def test_divide(self):
-        self._test(Calculator().divide, [
+        self._test(FileReader().divide, [
             (1, 3, .333),
             (5, 8, .625),
             (13, 21, .619),

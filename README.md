@@ -69,7 +69,7 @@
     * `is_less_than_1(some_value)`
 
 ## Math Utilities
-* Ensure each of the test cases passes successfully in the class [calculator_test.py](./src/test/calculator_test.py) by completing each of the method stubs in the class [calculator.py](src/main/calculator.py).
+* Ensure each of the test cases passes successfully in the class [calculator_test.py](./src/test/calculator_test.py) by completing each of the method stubs in the class [calculator.py](src/main/file_reader.py).
 * Method Stubs to be completed	
 	* `add(first_value, second_value)`
 	* `subtract(first_value, second_value)`
