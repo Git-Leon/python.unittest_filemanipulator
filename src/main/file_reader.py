@@ -33,7 +33,3 @@ class FileReader(object):
 
     def get_all_local_files_containing_text(self, text_to_search_for):
         return self.get_all_files_containing_text(self.get_local_directory(), text_to_search_for)
-
-
-
-print(FileReader().get_all_local_files_containing_text("all_"))
